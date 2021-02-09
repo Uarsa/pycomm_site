@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Questionnaire
+{% endblock %}
+
+
+{% block intro %}
+Мы не учим программированию на питоне с нуля. У вас должны быть уже какие-то навыки.
+{% endblock %}
+
+
+{% block heading1 %}Уровень знаний{% endblock %}
+{% block section1 %}
+Для удобной и эффективной разработки программист использует множесмтво различных технологий и
+инструментов. Из списка ниже выбери те, с которыми ты уже, возможно, сталкивался:
+
+<div class="row mb-3">
+    <div class="col">
+        <h6>Linux: Ubuntu / Debian</h6>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+            <label class="form-check-label" for="inlineRadio3">4</label>
+        </div>
+    </div>
+
+    <div class="col">
+        <h6>VCS: Git / Mercurial / Subversion</h6>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7" value="option3">
+            <label class="form-check-label" for="inlineRadio3">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8" value="option4">
+            <label class="form-check-label" for="inlineRadio3">4</label>
+        </div>
+    </div>
+
+    <div class="col">
+        <h6>Базы данных: MySQL / PostgreSQL / SQLite</h6>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio9" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio10" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio11" value="option3">
+            <label class="form-check-label" for="inlineRadio3">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio12" value="option4">
+            <label class="form-check-label" for="inlineRadio3">4</label>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <h6>Фреймворки: Flask / Django</h6>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio13" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio14" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio15" value="option3">
+            <label class="form-check-label" for="inlineRadio3">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio16" value="option4">
+            <label class="form-check-label" for="inlineRadio3">4</label>
+        </div>
+    </div>
+
+    <div class="col">
+        <h6>API: Telegram / ВКонтакте</h6>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio17" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio18" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio19" value="option3">
+            <label class="form-check-label" for="inlineRadio3">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio20" value="option4">
+            <label class="form-check-label" for="inlineRadio3">4</label>
+        </div>
+    </div>
+
+    <div class="col">
+        <h6>Web: HTML / CSS / JS / Bootstrap </h6>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio21" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio22" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio23" value="option3">
+            <label class="form-check-label" for="inlineRadio3">3</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio24" value="option4">
+            <label class="form-check-label" for="inlineRadio3">4</label>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block heading2 %}Как планируешь использовать приобретёные знания?{% endblock %}
+{% block section2 %}
+<div class="container ps-5 pe-5">
+    <textarea name="knowledge" id="knowledge" class="form-control" placeholder=">"></textarea><br>
+</div>
+{% endblock %}
+
+{% block heading3 %}Расскажи пару слов о себе{% endblock %}
+{% block section3 %}
+<div class="container ps-5 pe-5">
+    <textarea name="yourself" id="yourself" class="form-control" placeholder=">"></textarea><br>
+</div>
+{% endblock %}
+
+
+{% block input %}
+{% endblock %}

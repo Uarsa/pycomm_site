@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+  Python Community
+{% endblock %}
+
+
+{% block intro %}
+Привет! Изучаешь Python, уже прошёл все базовые программы обучения, но пока так и не можешь
+начать применять приобретённые знания на практике? Тогда читай дальше.
+{% endblock %}
+
+{% block heading1 %}Кто мы такие{% endblock %}
+{% block section1 %}
+Мы - люди, заинтересованные в обучении и желающие обмениваться знаниями с окружающими.
+{% endblock %}
+
+{% block heading2 %}Почему мы возникли{% endblock %}
+{% block section2 %}
+Мы хотим идти к цели вместе, ищем единомышленников. Хотим круто и с пользой проводить время.
+{% endblock %}
+
+{% block heading3 %}К чему мы идём{% endblock %}
+{% block section3 %}
+К тому, чтобы каждый мог использовать приобретённые знания с пользой для себя и окружающих.
+{% endblock %}
+
+
+{% block input %}
+<div class="container mt-1 mb-3">
+    <input class="form-control" name="name" id="name" type="text" placeholder="Name" aria-label="default input example">
+</div>
+<div class="container mb-3">
+    <input class="form-control" name="email" id="email" type="email" placeholder="E-mail" aria-label="default input example">
+</div>
+{% endblock %}
