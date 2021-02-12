@@ -3,7 +3,7 @@ import datetime
 
 
 UPLOAD_FOLDER = "files/questionnaires/"
-ALLOWED_EXTENSIONS = {'txt', }
+ALLOWED_EXTENSIONS = {'txt', 'py', }
 
 
 app = Flask(__name__)
@@ -32,8 +32,8 @@ def form1():
     if request.method == "POST":
         knowledge = request.form['knowledge']
         yourself = request.form['yourself']
-        filename = "test"
-        f = open(UPLOAD_FOLDER + filename + ".txt", "w", encoding="utf-8")
+        filename = "test.txt"
+        f = open(UPLOAD_FOLDER + filename, "w", encoding="utf-8")
         f.write(knowledge + "\n \n" + yourself)
         f.close()
 
