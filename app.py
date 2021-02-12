@@ -32,9 +32,10 @@ def form1():
     if request.method == "POST":
         knowledge = request.form['knowledge']
         yourself = request.form['yourself']
+        data = knowledge + "\n\n" + yourself
         filename = "test.txt"
         f = open(UPLOAD_FOLDER + filename, "w", encoding="utf-8")
-        f.write(knowledge + "\n \n" + yourself)
+        f.write(data)
         f.close()
 
         return redirect('form2.html')
