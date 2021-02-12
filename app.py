@@ -21,7 +21,6 @@ def index():
         f = open(UPLOAD_FOLDER + filename, "w", encoding="utf-8")
         f.write(data)
         f.close()
-
         return redirect('form1.html')
     else:
         return render_template('index.html')
@@ -37,7 +36,6 @@ def form1():
         f = open(UPLOAD_FOLDER + filename, "w", encoding="utf-8")
         f.write(data)
         f.close()
-
         return redirect('form2.html')
     else:
         return render_template('form1.html')
