@@ -17,7 +17,8 @@ def index():
         email = request.form['email']
         date = datetime.datetime.now().strftime('%d.%m.%Y %R')
         data = name + "\n" + email + "\n" + date
-        f = open(UPLOAD_FOLDER + email + ".txt", "w", encoding="utf-8")
+        filename = email.split(".")[0] + ".txt"
+        f = open(UPLOAD_FOLDER + filename, "w", encoding="utf-8")
         f.write(data)
         f.close()
 
